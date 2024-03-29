@@ -1,0 +1,513 @@
+/* Global CSS Styles */
+
+/*
+
+File Sections by lines
+
+1- 
+2-
+3-
+4-
+5-
+
+*/
+
+/* English Font ==> [IBM Plex Sans]*/
+
+@font-face {
+  font-family: Reddit Mono;
+  src: url("../fonts/Reddit_Mono/RedditMono-VariableFont_wght.ttf")
+    format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+}
+
+/* ------> Start of Global CSS Selectors */
+
+/* Root Styles*/
+:root {
+  /* Global Varibales */
+
+  /* Global Varibales Guide
+# 
+# fsz = font-size
+# fw  = font-weight
+# btn = button
+# clr = color
+# bkg = background
+# p   = paragraph element
+#
+*/
+
+  /* -----> Global Varibales  */
+
+  --dark-background-color: #131415;
+  --text-color-light: #fff;
+  --text-color-dark: #cbc8d0;
+  --text-color-light-dark: #eaeaea;
+  --link-color-dark: #0da2b8;
+  --link-color-light: rgb(30, 190, 214);
+  --border-color-light: rgb(218, 218, 218);
+  --border-color-dark: #2b3031;
+
+  /* === -----------------| Spaces Start |----------------- ===  */
+
+  /*
+   == Spacers ::Alternative for margins::
+    [use as an empty div
+   with padding-block or 
+   use the utility classes] ==
+    */
+  --spacer1: 0.25rem;
+  --spacer2: 0.5rem;
+  --spacer3: 0.75rem;
+  --spacer4: 1rem;
+  --spacer5: 1.25rem;
+  --spacer6: 1.5rem;
+  --spacer7: 1.75rem;
+  --spacer8: 2rem;
+  --spacer9: 2.25rem;
+  --spacer10: 2.5rem;
+  --spacer11: 2.75rem;
+  --spacer12: 3rem;
+  --spacer13: 3.25rem;
+  --spacer14: 3.5rem;
+  --spacer15: 3.75rem;
+  --spacer16: 4rem;
+
+  --section-padding-block: calc(2rem + 2vw);
+  --section-padding-block-medium: calc(2rem + 1.5vw);
+  --section-padding-block-small: calc(2rem + 1.25vw);
+
+  --section-padding-top: 1.5rem;
+  --section-padding-top-medium: 1.25rem;
+  --section-padding-top-small: 1rem;
+
+  --section-padding-bottom: 1.5rem;
+  --section-padding-bottom-medium: 1.25rem;
+  --section-padding-bottom-small: 1rem;
+
+  --section-padding-left: 1.5rem;
+  --section-padding-left-medium: 1.25rem;
+  --section-padding-left-small: 1rem;
+
+  --section-padding-right: 1.5rem;
+  --section-padding-right-medium: 1.25rem;
+  --section-padding-right-small: 1rem;
+
+  /* === -----------------| Spaces End |----------------- ===  */
+
+  --section-title-fsz: 1.5rem;
+  --section-title-fw: bold;
+  --section-title-padding-block: 1rem;
+
+  /* === -----------------| Font Sizes & Weights Start |----------------- ===  */
+
+  /* Font Weights */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /* Headings */
+
+  --title-small-fsz: calc(10px + 5vw);
+  --title-meduim-fsz: clamp(1.5rem, 5vw, 2rem);
+  --title-large-fsz: clamp(2.6rem, 3.8vw, 3.6rem);
+
+  /*
+    Minor Third ==> 1.200 
+    Large Font sizes
+      */
+
+  --h1-fsz: 2.986rem; /* ==> 47.78px */
+  --h2-fsz: 2.488rem; /* ==> 39.81px */
+  --h3-fsz: 2.074rem; /* ==> 33.18px */
+  --h4-fsz: 1.728rem; /* ==> 27.65px */
+  --h5-fsz: 1.44rem; /* ==> 23.04px */
+  --h6-fsz: 1.2rem; /* ==> 19.2px */
+
+  /*
+    Major Second ==> 1.125
+    Small Font sizes
+      */
+
+  --h1-fsz-compact: 2.027rem; /* ==> 32.44px */
+  --h2-fsz-compact: 1.802rem; /* ==> 28.83px */
+  --h3-fsz-compact: 1.602rem; /* ==> 25.63px */
+  --h4-fsz-compact: 1.424rem; /* ==> 22.78px */
+  --h5-fsz-compact: 1.266rem; /* ==> 20.25px */
+  --h6-fsz-compact: 1.125rem; /* ==> 18px */
+
+  /*
+    Custom Sizes ==> Percentage [ 45% ==> 260% ]
+      */
+
+  --font-size-base: clamp(1.3rem, 1.9vw, 1.7rem);
+  --font-size-xxx-small: 45%;
+  --font-size-xx-small: 55%;
+  --font-size-x-small: 62%;
+  --font-size-small: 80%;
+  --font-size-medium: 100%;
+  --font-size-large: 125%;
+  --font-size-x-large: 160%;
+  --font-size-xx-large: 200%;
+  --font-size-xxx-large: 260%;
+
+  --font-size-custom-19: 1.1875rem; /*  19px */
+  --font-size-custom-18: 1.125rem; /*   18px */
+  --font-size-custom-17: 1.0625rem; /*  17px */
+  --font-size-custom-16: 16px;
+  --font-size-custom-14: 14px;
+  --font-size-custom-12: 12px;
+  --font-size-custom-10: 10px;
+
+  --heading-width: fit-content;
+  --heading-line-height: calc(1em + 0.725rem);
+
+  --heading-padding-top: 1.5rem;
+  --heading-padding-top-medium: 1.25rem;
+  --heading-padding-top-small: 1rem;
+
+  --heading-padding-bottom: 1.5rem;
+  --heading-padding-bottom-medium: 1.25rem;
+  --heading-padding-bottom-small: 1rem;
+
+  --heading-padding-right: 1.5rem;
+  --heading-padding-right-medium: 1.25rem;
+  --heading-padding-right-small: 1rem;
+
+  --heading-padding-left: 1.5rem;
+  --heading-padding-left-medium: 1.25rem;
+  --heading-padding-left-small: 1rem;
+
+  --heading-padding-block: 1.5rem;
+  --heading-padding-block-medium: 1.25rem;
+  --heading-padding-block-small: 1rem;
+
+  --heading-padding-inline: 1.5rem;
+  --heading-padding-inline-medium: 1.25rem;
+  --heading-padding-inline-small: 1rem;
+
+  /* Paragraphs */
+
+  --p-fsz-large: 1.35rem; /* 21.6px */
+  --p-fsz-meduim: 1.125rem; /* 18px */
+  --p-fsz-small: 1rem; /* 16px */
+  --p-width: 90%;
+  --p-padding-top: 1.25rem;
+  --p-padding-bottom: 1.25rem;
+
+  /* Buttons */
+
+  --btn-fsz-large: 1.6rem;
+  --btn-fsz-meduim: 1.3rem;
+  --btn-fsz-small: 1rem;
+
+  --p-fsz-small: 0.9375rem; /* 15px */
+  --p-fsz-x-small: 0.875rem; /* 14px */
+
+  /* --h1-fsz: 5rem;
+  --h1-fw: bold;
+
+  --h2-fsz: 2.5rem;
+  --h2-fw: bold;
+
+  --h3-fsz: 2rem;
+  --h3-fw: bold;
+
+  --p1-fsz: 1.5rem;
+  --p1-fw: bold;
+
+  --p2-fsz: 1.25rem;
+  --p2-fw: bold;
+
+  --p3-fsz: 1.25rem;
+  --p3-fw: mediun;
+
+  --p4-fsz: 0.9375rem;
+  --p4-fw: bold;
+
+  --p5-fsz: 0.9375rem;
+  --p5-fw: meduim;
+
+  --p18-fsz: 1.125rem;
+  --p16-fsz: 1rem; */
+
+  /* Line Height */
+  --line-height-1-3: 1.3;
+  --line-height-1-4: 1.4;
+  --line-height-1-5: 1.5;
+  --line-height-1-6: 1.6;
+  --line-height-1-7: 1.7;
+
+  --nav-item-fsz: 1.125rem;
+  --nav-item-fw: bold;
+
+  /* === -----------------| Font Sizes & Weights End |----------------- ===  */
+
+  --border-radius: 30px;
+
+  --btn-border-radius: 28px;
+
+  --btn-red-clr: #9f0414;
+
+  --btn-blue-clr: #2f5a74;
+
+  --background-color: #1f1f1f;
+  --secondry-background-color: #e3eef4;
+
+  --p-color: #5b5f62; /* About Page Paragraphs color */
+
+  /* ------> The oppsite of the background-color */
+
+  --inverted-background-color: #ffffff;
+
+  /*  The oppsite of the background-color <-----*/
+
+  /* ------> mobile-menu-backkgroud-color */
+
+  --mobile-menu-bkg-clr: hsla(213, 43%, 4%, 0.95);
+
+  /* mobile-menu-backkgroud-color <------ */
+
+  --red-color: #9f0414;
+  --grey-color: #3c4856c2;
+  --secondry-color: #2d2f31;
+  --primary-color: #ffffff;
+  --pale-black-color: #2f2e2e;
+
+  --form-input-clr: #f3f6fc;
+
+  /* ------> Fixed text colors for light/dark theme 
+same colors on both color-scheme
+*/
+
+  --light-text-clr: #ffffff;
+  --dark-text-clr: #000000;
+
+  /* Fixed text colors for light/dark theme <------ 
+same colors on both color-scheme
+*/
+
+  /*  Black & White Colors Vars */
+
+  --white-clr: #ffffff;
+  --black-clr: #000000;
+
+  /*  Black & White Colors Vars */
+
+  --btn-text-clr: #fff;
+
+  --gradient-color-red: linear-gradient(
+    336deg,
+    #da2c08 0%,
+    #e24e72 49.49%,
+    #395ab0 100%
+  );
+
+  /*  Global Varibales <----- */
+
+  --max-width-body: 1440px;
+  --main-width-body: 840px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Reddit Mono", "IBM Plex Sans Arabic", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--dark-background-color);
+  color: var(--text-color-light);
+  /* max-width: var(--max-width-body); */
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* :lang(ar) {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+} */
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+/*------------------------------------*    #IMAGES
+\*------------------------------------*/
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+img {
+  max-width: 100%;
+  /* [1] */
+  font-style: italic;
+  /* [2] */
+  vertical-align: middle;
+  /* [3] */
+}
+
+/**
+   * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+   *    not make the image fluid.
+   */
+img[width],
+img[height] {
+  /* [1] */
+  max-width: none;
+}
+
+/* ===============================Global Styles=============================== */
+li {
+  list-style: none;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar mobile menu control class for 
+ open/close state */
+
+/* 
+# This class disable the body overflow    
+# when the mobile menu is open    
+# the logic is done using the mobileMenuToggler function  
+# located in theHamburgerMenuToggler.ts file 
+# the class needs to be exposed globally as it will be 
+# attached to the body element when the menu is open.
+ */
+
+.mobile__nav__open {
+  overflow: hidden;
+  height: 100dvh;
+}
+
+.main__container__wrapper {
+  width: 100%;
+  --padding-inline-main-container: calc(1vw + 0.5rem);
+  --max-width-main-container: 840px;
+
+  max-width: var(--max-width-main-container);
+  padding-inline: var(--padding-inline-main-container);
+  margin-block: 0;
+  margin-inline: auto;
+}
+
+/*
+   == Spacers [use as an empty div
+   with the utility class] ==
+    */
+.spacer1 {
+  padding-block: var(--spacer1);
+}
+.spacer2 {
+  padding-block: var(--spacer2);
+}
+.spacer3 {
+  padding-block: var(--spacer3);
+}
+.spacer4 {
+  padding-block: var(--spacer4);
+}
+.spacer5 {
+  padding-block: var(--spacer5);
+}
+.spacer6 {
+  padding-block: var(--spacer6);
+}
+.spacer7 {
+  padding-block: var(--spacer7);
+}
+.spacer8 {
+  padding-block: var(--spacer8);
+}
+.spacer9 {
+  padding-block: var(--spacer9);
+}
+.spacer10 {
+  padding-block: var(--spacer10);
+}
+.spacer11 {
+  padding-block: var(--spacer11);
+}
+.spacer12 {
+  padding-block: var(--spacer12);
+}
+.spacer13 {
+  padding-block: var(--spacer13);
+}
+.spacer14 {
+  padding-block: var(--spacer14);
+}
+.spacer15 {
+  padding-block: var(--spacer15);
+}
+.spacer16 {
+  padding-block: var(--spacer16);
+}
+
+/*---------------- SCROLLBAR Styles-------------------- */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(240, 4.8%, 4.1%);
+  /* box-shadow: 0 0 10px #000 inset; */
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: var(--mainLinkColor-dark); */
+  border-radius: 20px;
+  height: 90px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #424344;
+  /* background-color: transparent; */
+  /* border-top: 20px solid hsla(219, 100%, 50%, 1);
+    border-bottom: 20px solid hsla(219, 100%, 50%, 1) */
+  /* border-top: 60px solid hsla(240, 4.8%, 4.1%, 1);
+    border-bottom: 60px solid hsla(240, 4.8%, 4.1%, 1) */
+  /*or any height and color you want*/
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-link-color);
+    border-radius: 20px;
+  } */
+
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #424344;
+  border-radius: 20px;
+  height: 1px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track:horizontal {
+  background-color: hsl(240, 4.8%, 4.1%);
+  /* box-shadow: 0 0 10px #000 inset; */
+}

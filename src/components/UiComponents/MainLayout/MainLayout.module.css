@@ -1,0 +1,9 @@
+.main__container {
+  --padding-inline-main-container: calc(3vw + 0.5rem);
+  --max-width-main-container: 1240px;
+  max-width: var(--max-width-main-container);
+  padding-inline: 1.25rem;
+  padding-inline: var(--padding-inline-main-container);
+  margin-block: 0;
+  margin-inline: auto;
+}

@@ -1,0 +1,79 @@
+.spacer {
+  /* === -----------------| Spaces Start |----------------- ===  */
+
+  /*
+   == Spacers ::Alternative for margins::
+    [use as an empty div
+   with padding-block or 
+   use the utility classes] ==
+    */
+  --spacer__margin__1: 0.25rem;
+  --spacer__margin__2: 0.5rem;
+  --spacer__margin__3: 0.75rem;
+  --spacer__margin__4: 1rem;
+  --spacer__margin__5: 1.25rem;
+  --spacer__margin__6: 1.5rem;
+  --spacer__margin__7: 1.75rem;
+  --spacer__margin__8: 2rem;
+  --spacer__margin__9: 2.25rem;
+  --spacer__margin__10: 2.5rem;
+  --spacer__margin__11: 2.75rem;
+  --spacer__margin__12: 3rem;
+  --spacer__margin__13: 3.25rem;
+  --spacer__margin__14: 3.5rem;
+  --spacer__margin__15: 3.75rem;
+  --spacer__margin__16: 4rem;
+}
+
+/*
+   == Spacers [use as an empty div
+   with the utility class] ==
+    */
+.spacer1 {
+  padding-block: var(--spacer__margin__1);
+}
+.spacer2 {
+  padding-block: var(--spacer__margin__2);
+}
+.spacer3 {
+  padding-block: var(--spacer__margin__3);
+}
+.spacer4 {
+  padding-block: var(--spacer__margin__4);
+}
+.spacer5 {
+  padding-block: var(--spacer__margin__5);
+}
+.spacer6 {
+  padding-block: var(--spacer__margin__6);
+}
+.spacer7 {
+  padding-block: var(--spacer__margin__7);
+}
+.spacer8 {
+  padding-block: var(--spacer__margin__8);
+}
+.spacer9 {
+  padding-block: var(--spacer__margin__9);
+}
+.spacer10 {
+  padding-block: var(--spacer__margin__10);
+}
+.spacer11 {
+  padding-block: var(--spacer__margin__11);
+}
+.spacer12 {
+  padding-block: var(--spacer__margin__12);
+}
+.spacer13 {
+  padding-block: var(--spacer__margin__13);
+}
+.spacer14 {
+  padding-block: var(--spacer__margin__14);
+}
+.spacer15 {
+  padding-block: var(--spacer__margin__15);
+}
+.spacer16 {
+  padding-block: var(--spacer__margin__16);
+}
