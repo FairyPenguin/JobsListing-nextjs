@@ -1,0 +1,49 @@
+.card {
+  border-radius: 0.5rem; /* 8px */
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.gray {
+  background-color: rgb(243 244 246);
+}
+
+.slate {
+  background-color: rgb(241 245 249);
+}
+
+.card__title {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  font-weight: bold;
+  color: black;
+}
+
+.card__description {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: black;
+}
+
+.card__button {
+  all: unset;
+  border-radius: 0.5rem; /* 8px */
+}
+
+.card__link {
+  /*  hover:bg-gray-700 */
+  border-radius: 0.5rem; /* 8px */
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  display: inline-block;
+}
+
+.gray__card__button {
+  background-color: rgb(17 24 39);
+}
+
+.slate__card__button {
+  background-color: rgb(15 23 42);
+  background-color: rgb(51 65 85);
+}
