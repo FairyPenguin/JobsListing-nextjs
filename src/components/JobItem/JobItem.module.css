@@ -1,0 +1,49 @@
+.job__item {
+  background-color: white;
+  border-radius: var(--rounded-xl);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.job__item__inner__wrapper {
+  padding-block: var(--var4);
+  padding-inline: var(--var4);
+}
+
+.job__item__typeandtitle__wrapper {
+  padding-bottom: var(--var6);
+}
+
+.job__item__type {
+  color: hsl(215, 13.79%, 34.12%);
+  padding-block: var(--var2);
+}
+
+.job__item__title {
+  font-size: var(--text-xl);
+  font-weight: bold;
+  color: black;
+}
+
+.job__item__title {
+  padding-bottom: var(--var5);
+}
+
+.job__item__description {
+  padding-bottom: var(--var2);
+  color: black;
+}
+
+.job__item__salary {
+  /* text-indigo-500*/
+  color: black;
+  padding-bottom: var(--var2);
+  font-weight: normal;
+}
+
+.seprator__line {
+  /* border border-gray-100 mb-5 */
+  border-top: 1px solid grey;
+  padding-bottom: var(--var5);
+  display: block;
+}
