@@ -10,9 +10,7 @@ export default async function JobsList() {
     <>
       <section className={styles["jobs__list"]}>
         <div className={styles["jobs__container"]}>
-          <h2 className="text-3xl font-bold text-indigo-500 mb-6 text-center">
-            Browse Jobs
-          </h2>
+          <h2 className={styles["jobs__list__heading"]}>Browse Jobs</h2>
           <div className={styles["jobs__grid"]}>
             {
               /* JOOOOOOOOOOOOOBS */

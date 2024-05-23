@@ -1,5 +1,6 @@
 import LocationPinSvgIcon from "../SvgIcons/LocationPinSvgIcon";
 import styles from "./JobItem.module.css";
+import JobItemDescription from "./JobItemComponents/JobDescription";
 
 type Job = {
   id: number;
@@ -23,21 +24,16 @@ export default function JobItem({ job }: { job: Job }) {
             <div className={styles["job__item__type"]}>{job.type}</div>
             <h3 className={styles["job__item__title"]}>{job.title}</h3>
           </div>
-          <div className={styles["job__item__description"]}>
-            {job.description}
-          </div>
+          <JobItemDescription jobDescription={job.description} />
           <h3 className={styles["job__item__salary"]}>{job.salary}</h3>
           <span className={styles["seprator__line"]}></span>
-          <div className="flex flex-col lg:flex-row justify-between mb-4">
-            <div className="text-orange-700 mb-3">
+          <div className={styles["job__item__bottom__section"]}>
+            <div className={styles["job__item__location"]}>
               {/* Location SVG ICON */}
-              <LocationPinSvgIcon width={20} height={20} />
+              <LocationPinSvgIcon width={18} height={18} />
               {job.location}
             </div>
-            <a
-              href="job"
-              className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm"
-            >
+            <a href="job" className={styles["job__item_readmore"]}>
               Read More
             </a>
           </div>

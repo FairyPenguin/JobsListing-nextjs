@@ -1,0 +1,19 @@
+.job__item__description {
+  padding-bottom: var(--var2);
+  color: black;
+}
+
+.showmore__btn {
+  /* text-indigo-500 hover:text-indigo-600 */
+  color: black;
+  padding-bottom: var(--var5);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit; /* 1 */
+}
+
+.showmore__btn:hover {
+  color: grey;
+}

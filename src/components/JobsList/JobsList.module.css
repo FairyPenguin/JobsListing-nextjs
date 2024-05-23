@@ -4,6 +4,15 @@
   padding-block: var(--var10);
 }
 
+.jobs__list__heading {
+  /*  text-indigo-500 */
+  text-align: center;
+  padding-bottom: var(--var6);
+  font-weight: bold;
+  font-size: var(--text-3xl);
+  color: black;
+}
+
 .jobs__container {
   margin-inline: auto;
   max-width: 100%;
