@@ -37,11 +37,15 @@
 //   }
 // }
 
-// insertData().catch((e) => {
-//     throw e
-// }).finally(async () => {
-//     await prisma.$disconnect()
-// })
+// insertData()
+//   .catch((e) => {
+//     throw e;
+//   })
+//   .finally(async () => {
+//     await prisma.$disconnect();
+//   });
+
+// export default insertData;
 
 /* 
 
@@ -60,5 +64,3 @@ const users = await prisma.user.createMany({
 
 
 */
-
-export default insertData;
