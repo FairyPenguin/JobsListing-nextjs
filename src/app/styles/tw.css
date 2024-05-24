@@ -1,4 +1,8 @@
 :root {
+
+/*  */
+
+  
   /* Background Colors */
   --bg-primary: #0d1321; /* Rich Black */
   --bg-secondary-1: #202942; /* Rich Black Lighter Variant 1 */
@@ -59,13 +63,7 @@
 
   /* Extras */
 
-  --rich-black: #0d1321;
-  --platinum: #e0e0e0;
-  --celestial-blue: #2d9cdb;
-  --satin-sheen-gold: #c89933;
-  --pumpkin: #e77728;
-  --dark-red: #8c1c13;
-  --bittersweet-shimmer: #bf4342;
+
 
   /* Extras */
 
