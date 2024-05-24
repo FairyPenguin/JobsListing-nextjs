@@ -1,0 +1,23 @@
+.jobs__viewall {
+  /*  max-w-lg   */
+  margin-inline: auto;
+  max-width: 500px;
+  padding-inline: var(--var6);
+  padding-block: var(--var10);
+}
+
+.jobs__viewall__link {
+  display: block;
+  background-color: var(--btn-secondary-dark-grey-bkg);
+  color: var(--btn-secondary-text);
+  text-align: center;
+  padding-block: var(--var4);
+  padding-inline: var(--var6);
+  border-radius: var(--rounded-xl);
+  font-weight: var(--fw-500);
+  font-size: 1.25rem;
+}
+
+.jobs__viewall__link:hover {
+  background-color: var(--btn-secondary-hover);
+}

@@ -6,6 +6,7 @@ import CardsWrapper from "@/components/CardsWrapper/CardsWrapper";
 import Card from "@/components/Card/Card";
 import printTo100 from "../../utilities/Print100";
 import JobsList from "@/components/JobsList/JobsList";
+import ViewAll from "@/components/ViewAll/ViewAll";
 // import Jobs from "@/Data/JobsData.json";
 // import prisma from "../../utilities/prismaDB";
 
@@ -37,6 +38,7 @@ export default function Home() {
         </CardsWrapper>
       </MainLayout>
       <JobsList />
+      <ViewAll />
     </>
   );
 }

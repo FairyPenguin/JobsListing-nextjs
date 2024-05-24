@@ -5,6 +5,8 @@ import styles from "./JobsList.module.css";
 export default async function JobsList() {
   const jobs = await getJobs();
 
+  const slicedJobs = jobs?.slice(0, 3);
+
   return (
     // <!-- Browse Jobs -->
     <>
@@ -14,8 +16,8 @@ export default async function JobsList() {
           <div className={styles["jobs__grid"]}>
             {
               /* JOOOOOOOOOOOOOBS */
-              jobs !== undefined ? (
-                jobs.slice(0, 3).map((job, index) => {
+              slicedJobs !== undefined ? (
+                slicedJobs.map((job, index) => {
                   return <JobItem key={index} job={job} />;
                 })
               ) : (
@@ -25,11 +27,7 @@ export default async function JobsList() {
           </div>
         </div>
       </section>
-      <section className={styles["jobs__viewall"]}>
-        <a href="/jobs" className="jobs__viewall__link">
-          View All Jobs
-        </a>
-      </section>
+    
     </>
   );
 }

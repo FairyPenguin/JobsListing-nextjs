@@ -25,30 +25,6 @@
   gap: var(--var6);
 }
 
-.jobs__viewall {
-  /*  max-w-lg   */
-  margin-inline: auto;
-  max-width: 1024px;
-  padding-inline: var(--var6);
-  padding-block: var(--var10);
-}
-
-.jobs__viewall__link {
-  /*   hover:bg-gray-700 */
-
-  display: block;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding-block: var(--var4);
-  padding-inline: var(--var6);
-  border-radius: var(--rounded-xl);
-}
-
-.jobs__viewall__link:hover {
-  background-color: hsl(216.92, 19.12%, 26.67%);
-}
-
 /* container-xl */
 @media screen and (min-width: 1280px) {
   .jobs__container {
