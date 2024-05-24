@@ -3,28 +3,30 @@
   padding-block: 1.5rem;
   padding-inline: 1.5rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  color: var(--text-primary);
 }
 
 .gray {
-  background-color: var(--card-background-color);
-  background-color: #202942;
+  background-color: var(--card-primary-bkg);
 }
 
 .slate {
-  background-color: #333d5b;
+  background-color: var(--card-secondary-bkg);
 }
 
 .card__title {
   font-size: 1.5rem; /* 24px */
   line-height: 2rem; /* 32px */
   font-weight: bold;
-  color: var(--card-headline-color);
+  color: var(--text-primary);
 }
 
 .card__description {
   padding-top: 0.5rem;
   padding-bottom: 1rem;
-  color: var(--card-paragraph-color);
+  color: var(--text-secondary-1);
+  /* font-size: 1.1rem; */
+  font-weight: 500;
 }
 
 .card__button {
@@ -43,8 +45,8 @@
 }
 
 .gray__card__button {
-  background-color: #e0e0e0;
-  color: #333333;
+  background-color: var(--platinum-grey);
+  color: var(--btn-secondary-text);
 }
 
 .gray__card__button:hover {
@@ -53,6 +55,7 @@
 
 .slate__card__button {
   background-color: var(--primary-darker-2);
+  color: var(--btn-primary-text);
 }
 
 .slate__card__button:hover {

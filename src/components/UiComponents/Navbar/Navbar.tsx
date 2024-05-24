@@ -9,7 +9,7 @@ function Navbar() {
         {/* Logo */}
         <a className={styles["logo"]} href="/">
           <LogoSvgIcon fill="#2d9cdb" className={styles["logo__icon"]} />
-          <span className={styles["logo__text"]}>JavaScript List</span>
+          <span className={styles["logo__text"]}></span>
         </a>
 
         <menu className={styles["nav__items__list"]}>

@@ -1,8 +1,6 @@
 .nav {
-  /* background-color: var(--bg-slate-700);
-  background-color: var(--secondary-color); */
   border-bottom: 1px solid #6bb9f0;
-  background-color: #202942;
+  background-color: var(--nav-primary-bkg);
 }
 
 .nav__container {
@@ -29,7 +27,7 @@
 
 .logo__text {
   /* hidden md:block */
-  color: var(--text-color-light);
+  /* color: ; */
   font-weight: 800;
   font-size: 2rem; /* 24px */
   line-height: 2rem; /* 32px */

@@ -1,0 +1,116 @@
+/* ------------ C_*_O_*_L_*_O_*_R_*_S ------------ */
+
+:root {
+  /* BASE Colors */
+  --rich-black: #0d1321;
+  --celestial-blue: #2d9cdb; /*  ==> Brand Color */
+  --platinum-grey: #e0e0e0;
+  --dark-orange-web: #ff8c00;
+
+  /* Background Colors + rich-black shades */
+  --bg-primary: var(--rich-black); /* Rich Black */
+  /* Rich Black Lighter Variant 1 */
+  --bg-secondary-light-1: #202942;
+  /* Rich Black Lighter Variant 2 */
+  --bg-secondary-light-2: #333d5b;
+  /* Rich Black Darker Variant 1 */
+  --bg-tertiary-dark-1: #080b17;
+  /* Rich Black Darker Variant 2 */
+  --bg-tertiary-dark-2: #03060c;
+
+  /* Text Colors + Platinum-Grey Shades */
+  --text-primary: var(--platinum-grey); /* Grey */
+  --text-secondary-1: #f5f5f5; /* Grey Lighter Variant 1 */
+  --text-secondary-2: #fafafa; /* Grey Lighter Variant 2 */
+  --text-sexondary-3-dark-grey: #333333;
+  --text-tertiary-1: #bdbdbd; /* Grey Darker Variant 1 */
+  --text-tertiary-2: #9e9e9e; /* Grey Darker Variant 2 */
+  --text-white: #ffffff; /* White */
+
+  /* Primary Color + Celestial-bBlue Shades */
+  --primary-color: var(--celestial-blue); /* Blue */
+  --primary-lighter-1: #6bb9f0; /* Blue Lighter Variant 1 */
+  --primary-lighter-2: #a9d6f2; /* Blue Lighter Variant 2 */
+  --primary-darker-1: #2179a9; /* Blue Darker Variant 1 */
+  --primary-darker-2: #185c7a; /* Blue Darker Variant 2 */
+
+  /* Accent Colors + Orange Shades */
+  --accent-color: #ff8c00; /* Orange */
+  --accent-lighter-1: #ffa94d; /* Orange Lighter Variant 1 */
+  --accent-lighter-2: #ffd3b4; /* Orange Lighter Variant 2 */
+  --accent-darker-1: #cc7000; /* Orange Darker Variant 1 */
+  --accent-darker-2: #995500; /* Orange Darker Variant 2 */
+  --accent-color-pumpkin: #e77728;
+  --satin-sheen-gold: #c89933;
+
+  /* Tertiary Colors */
+  --tertiary-dark-red: #8c1c13;
+  --tertiary-bittersweet-shimmer: #bf4342;
+
+  /* Green Color */
+  --green-color: #2aa198; /* Green */
+  --green-lighter-1: #6fbeb5; /* Green Lighter Variant 1 */
+  --green-lighter-2: #b7e4de; /* Green Lighter Variant 2 */
+  --green-darker-1: #217c73; /* Green Darker Variant 1 */
+  --green-darker-2: #175654; /* Green Darker Variant 2 */
+
+  /* Red Color */
+  --red-color: #8c1c13; /* Red */
+  --red-lighter-1: #b24a3b; /* Red Lighter Variant 1 */
+  --red-lighter-2: #d87a6a; /* Red Lighter Variant 2 */
+  --red-darker-1: #6e1610; /* Red Darker Variant 1 */
+  --red-darker-2: #510f0b; /* Red Darker Variant 2 */
+
+  /* Purple Color */
+  --purple-color: #9000b3; /* Purple */
+  --purple-lighter-1: #b14dd6; /* Purple Lighter Variant 1 */
+  --purple-lighter-2: #d8b3e8; /* Purple Lighter Variant 2 */
+  --purple-darker-1: #6e008a; /* Purple Darker Variant 1 */
+  --purple-darker-2: #4c006b; /* Purple Darker Variant 2 */
+
+  /* Button Background & Text Colors */
+
+  --btn-primary-dark-blue-bkg: var(--primary-darker-2);
+  --btn-primary-light-blue-bkg: var(--celestial-blue);
+  --btn-secondary-dark-grey-bkg: var(--platinum-grey);
+
+  --btn-primary-text: var(--text-white);
+  --btn-secondary-text: var(--text-sexondary-3-dark-grey);
+
+  /* Hover State Colors */
+
+  --btn-primary-hover: var(--primary-lighter-1);
+  --btn-secondary-hover: var(--text-tertiary-1);
+
+  /* Card Colors */
+
+  --card-primary-bkg: var(--bg-secondary-light-1);
+  --card-secondary-bkg: var(--bg-secondary-light-2);
+  --card-primary-text: var(--text-primary);
+  --card-secondary-text: var(--text-primary);
+
+  /* Section Colors */
+
+  --section-primary-bkg: var(--bg-secondary-light-2);
+  --section-secondary-bkg: var(--bg-secondary-light-1);
+
+  --section-primary-text: var(--platinum-grey);
+  --section-secondary-text: var(--text-secondary-1);
+
+  /* Stroke Colors */
+
+  /* Grey Darker Variant 2 */
+  --stroke-color: var(--text-tertiary-2);
+
+  /* Hero - Header - Navbar  - Footer */
+
+  --hero-header-primary-bkg: var(--rich-black);
+  --hero-header-primary-text: var(--text-secondary-1);
+
+  --nav-primary-bkg: var(--bg-secondary-light-1);
+  --nav-primary-text: var(--platinum-grey);
+  --nav-hover-active-state: var(--primary-lighter-1);
+
+  --footer-primary-bkg: var(--bg-tertiary-dark-1);
+  --footer-primary-text: var(--text-tertiary-1);
+}

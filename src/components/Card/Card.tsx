@@ -9,9 +9,7 @@ type CardPropsType = {
 
 function Card({ background, buttonBackground, title, paragraph }: CardPropsType) {
     return (
-
         <>
-
             <div className={`${styles["card"]} ${styles[`${background}`]}`}>
                 <h2 className={styles["card__title"]}>{title}</h2>
                 <p className={styles["card__description"]}>
