@@ -8,8 +8,8 @@ function Navbar() {
       <div className={styles["nav__container"]}>
         {/* Logo */}
         <a className={styles["logo"]} href="/">
-          <LogoSvgIcon className={styles["logo__icon"]} />
-          <span className={styles["logo__text"]}>JS Jobs Board</span>
+          <LogoSvgIcon fill="#2d9cdb" className={styles["logo__icon"]} />
+          <span className={styles["logo__text"]}>JavaScript List</span>
         </a>
 
         <menu className={styles["nav__items__list"]}>

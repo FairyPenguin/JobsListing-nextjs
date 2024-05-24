@@ -1,5 +1,5 @@
 .jobs__list {
-  background-color: burlywood;
+  background-color: #333d5b;
   padding-inline: var(--var4);
   padding-block: var(--var10);
 }
@@ -10,7 +10,7 @@
   padding-bottom: var(--var6);
   font-weight: bold;
   font-size: var(--text-3xl);
-  color: black;
+  color: var(--text-secondary-1);
 }
 
 .jobs__container {

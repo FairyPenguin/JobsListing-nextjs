@@ -1,41 +1,41 @@
-async function insertData() {
-  try {
-    const insertManyJobs = Jobs.map((job) =>
-      prisma.job.create({
-        data: {
-          id: job.id,
-          title: job.title,
-          type: job.type,
-          description: job.description,
-          location: job.location,
-          salary: job.salary,
-          companyId: job.company.id,
-        },
-      })
-    );
+// async function insertData() {
+//   try {
+//     const insertManyJobs = Jobs.map((job) =>
+//       prisma.job.create({
+//         data: {
+//           id: job.id,
+//           title: job.title,
+//           type: job.type,
+//           description: job.description,
+//           location: job.location,
+//           salary: job.salary,
+//           companyId: job.company.id,
+//         },
+//       })
+//     );
 
-    const jobsResults = await Promise.all(insertManyJobs);
+//     const jobsResults = await Promise.all(insertManyJobs);
 
-    const insertManyCompanies = Jobs.map((company) =>
-      prisma.company.create({
-        data: {
-          id: company.company.id,
-          name: company.company.name,
-          description: company.company.description,
-          contactEmail: company.company.contactEmail,
-          contactPhone: company.company.contactPhone,
-        },
-      })
-    );
+//     const insertManyCompanies = Jobs.map((company) =>
+//       prisma.company.create({
+//         data: {
+//           id: company.company.id,
+//           name: company.company.name,
+//           description: company.company.description,
+//           contactEmail: company.company.contactEmail,
+//           contactPhone: company.company.contactPhone,
+//         },
+//       })
+//     );
 
-    const companiesResults = await Promise.all(insertManyCompanies);
+//     const companiesResults = await Promise.all(insertManyCompanies);
 
-    console.log(jobsResults);
-    console.log(companiesResults);
-  } catch (error) {
-    console.error(error);
-  }
-}
+//     console.log(jobsResults);
+//     console.log(companiesResults);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
 
 // insertData().catch((e) => {
 //     throw e

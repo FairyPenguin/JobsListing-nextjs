@@ -15,7 +15,7 @@ export default async function JobsList() {
             {
               /* JOOOOOOOOOOOOOBS */
               jobs !== undefined ? (
-                jobs.map((job, index) => {
+                jobs.slice(0, 3).map((job, index) => {
                   return <JobItem key={index} job={job} />;
                 })
               ) : (

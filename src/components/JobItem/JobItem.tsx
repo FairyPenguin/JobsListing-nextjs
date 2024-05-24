@@ -30,7 +30,7 @@ export default function JobItem({ job }: { job: Job }) {
           <div className={styles["job__item__bottom__section"]}>
             <div className={styles["job__item__location"]}>
               {/* Location SVG ICON */}
-              <LocationPinSvgIcon width={18} height={18} />
+              <LocationPinSvgIcon width={18} height={18} fill="#e77728ff" />
               {job.location}
             </div>
             <a href="job" className={styles["job__item_readmore"]}>

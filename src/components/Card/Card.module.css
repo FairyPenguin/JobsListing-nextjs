@@ -6,24 +6,25 @@
 }
 
 .gray {
-  background-color: rgb(243 244 246);
+  background-color: var(--card-background-color);
+  background-color: #202942;
 }
 
 .slate {
-  background-color: rgb(241 245 249);
+  background-color: #333d5b;
 }
 
 .card__title {
   font-size: 1.5rem; /* 24px */
   line-height: 2rem; /* 32px */
   font-weight: bold;
-  color: black;
+  color: var(--card-headline-color);
 }
 
 .card__description {
   padding-top: 0.5rem;
   padding-bottom: 1rem;
-  color: black;
+  color: var(--card-paragraph-color);
 }
 
 .card__button {
@@ -37,13 +38,23 @@
   padding-inline: 1rem;
   padding-block: 0.5rem;
   display: inline-block;
+  /* font-weight: 500; */
+  font-size: 1.25rem;
 }
 
 .gray__card__button {
-  background-color: rgb(17 24 39);
+  background-color: #e0e0e0;
+  color: #333333;
+}
+
+.gray__card__button:hover {
+  background-color: var(--btn-secondary-hover);
 }
 
 .slate__card__button {
-  background-color: rgb(15 23 42);
-  background-color: rgb(51 65 85);
+  background-color: var(--primary-darker-2);
+}
+
+.slate__card__button:hover {
+  background-color: var(--primary-color);
 }

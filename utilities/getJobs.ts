@@ -6,7 +6,7 @@ async function getJobs() {
 
     const jobsResults = await Promise.all(getJobs);
 
-    console.log(jobsResults);
+    // console.log(jobsResults);
 
     return jobsResults;
   } catch (error) {

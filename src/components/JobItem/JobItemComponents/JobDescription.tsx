@@ -18,7 +18,9 @@ export default function JobItemDescription({
 
   return (
     <>
-      <div className={styles["job__item__description"]}>{descriptionText}</div>
+      <div className={styles["job__item__description"]}>
+        <p>{descriptionText}</p>
+      </div>
 
       <button
         onClick={() => setShowFullDescription((prevState) => !prevState)}

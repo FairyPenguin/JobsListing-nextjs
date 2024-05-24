@@ -15,8 +15,8 @@ File Sections by lines
 /* English Font ==> [IBM Plex Sans]*/
 
 @font-face {
-  font-family: Changa;
-  src: url("../fonts/Changa/Changa-VariableFont_wght.ttf") format("truetype");
+  font-family: Karla;
+  src: url("../fonts/Karla/Karla-VariableFont_wght.ttf") format("truetype");
   font-weight: 200 800;
   font-style: normal;
   font-optical-sizing: auto;
@@ -42,21 +42,6 @@ File Sections by lines
   /* -----> Global Varibales  */
 
   /* ------COLORS------ */
-
-  --bg-slate-500: rgb(100 116 139);
-
-  --bg-slate-700: rgb(51 65 85);
-
-  /* ------COLORS------ */
-
-  --dark-background-color: #131415;
-  --text-color-light: #fff;
-  --text-color-dark: #cbc8d0;
-  --text-color-light-dark: #eaeaea;
-  --link-color-dark: #0da2b8;
-  --link-color-light: rgb(30, 190, 214);
-  --border-color-light: rgb(218, 218, 218);
-  --border-color-dark: #2b3031;
 
   /* === -----------------| Spaces Start |----------------- ===  */
 
@@ -260,61 +245,13 @@ File Sections by lines
 
   --btn-border-radius: 28px;
 
-  --btn-red-clr: #9f0414;
-
-  --btn-blue-clr: #2f5a74;
-
-  --background-color: #1f1f1f;
-  --secondry-background-color: #e3eef4;
-
-  --p-color: #5b5f62; /* About Page Paragraphs color */
-
   /* ------> The oppsite of the background-color */
-
-  --inverted-background-color: #ffffff;
-
-  /*  The oppsite of the background-color <-----*/
-
-  /* ------> mobile-menu-backkgroud-color */
-
-  --mobile-menu-bkg-clr: hsla(213, 43%, 4%, 0.95);
-
-  /* mobile-menu-backkgroud-color <------ */
-
-  --red-color: #9f0414;
-  --grey-color: #3c4856c2;
-  --secondry-color: #2d2f31;
-  --primary-color: #ffffff;
-  --pale-black-color: #2f2e2e;
-
-  --form-input-clr: #f3f6fc;
 
   /* ------> Fixed text colors for light/dark theme 
 same colors on both color-scheme
 */
 
-  --light-text-clr: #ffffff;
-  --dark-text-clr: #000000;
-
-  /* Fixed text colors for light/dark theme <------ 
-same colors on both color-scheme
-*/
-
   /*  Black & White Colors Vars */
-
-  --white-clr: #ffffff;
-  --black-clr: #000000;
-
-  /*  Black & White Colors Vars */
-
-  --btn-text-clr: #fff;
-
-  --gradient-color-red: linear-gradient(
-    336deg,
-    #da2c08 0%,
-    #e24e72 49.49%,
-    #395ab0 100%
-  );
 
   /*  Global Varibales <----- */
 
@@ -331,11 +268,10 @@ same colors on both color-scheme
 }
 
 body {
-  font-family: "Changa", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  background: var(--dark-background-color);
-  color: var(--text-color-light);
+  font-family: "Karla", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
   /* max-width: var(--max-width-body); */
   margin: 0 auto;
   text-rendering: optimizeLegibility;

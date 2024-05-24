@@ -1,6 +1,8 @@
 .hero {
   /* bg-indigo-700 py-20 mb-4 */
-  background-color: var(--bg-slate-700);
+  /* background-color: var(--bg-slate-700);
+  background-color: var(--secondary-color); */
+  /* background-color: #6320ee; */
   padding-block: 5rem;
 }
 
