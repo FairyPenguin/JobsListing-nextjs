@@ -1,6 +1,6 @@
 .job__item__description {
   padding-bottom: var(--var2);
-  color: var(--platinum-grey);
+  color: var(--paragraph-primary-text);
   font-weight: var(--fw-500);
   line-height: var(--line-height-1-7);
 }
@@ -8,7 +8,8 @@
 .showmore__btn {
   /* text-indigo-500 hover:text-indigo-600 */
   color: var(--primary-lighter-1);
-  ;
+  color: var(--primary-lighter-2);
+
   padding-bottom: var(--var5);
   border: none;
   outline: none;

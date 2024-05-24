@@ -15,7 +15,7 @@
 }
 
 .job__item__type {
-  color: var(--text-tertiary-2);
+  color: var(--text-tertiary-3-light);
   padding-block: var(--var2);
   font-size: 1.15rem;
 }
@@ -32,6 +32,7 @@
   color: black;
   padding-bottom: var(--var2);
   color: var(--primary-lighter-1);
+  color: var(--primary-lighter-2);
   font-family: inherit; /* 1 */
   font-weight: bold;
   font-size: 1.25rem;
@@ -53,7 +54,7 @@
 
 .job__item__location {
   /* text-orange-700 mb-3 */
-  color: var(--accent-color-pumpkin);
+  color: var(--accent-lighter-1);
   padding-bottom: var(--var3);
   display: flex;
   align-items: center;
