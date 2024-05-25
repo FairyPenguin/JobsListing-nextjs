@@ -1,9 +1,17 @@
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 import LogoSvgIcon from "@/components/SvgIcons/LogoSvgIcon";
-import Link from "next/link";
+import NavitemLink from "./NavitemLink/NavitemLink";
 
 function Navbar() {
+  // Navigation Items Array
+
+  const navigationItems = [
+    { title: "Home", url: "/" },
+    { title: "Jobs", url: "/all-jobs" },
+    { title: "Add Job", url: "/add-job" },
+  ];
+
   return (
     <nav className={styles["nav"]}>
       <div className={styles["nav__container"]}>
@@ -14,23 +22,9 @@ function Navbar() {
         </a>
 
         <menu className={styles["nav__items__list"]}>
-          <li>
-            <Link href="/" className={styles["item__link"]}>
-              Home
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/all-jobs" className={styles["item__link"]}>
-              Jobs
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/add-job" className={styles["item__link"]}>
-              Add Job
-            </Link>
-          </li>
+          {navigationItems.map((item, index) => {
+            return <NavitemLink key={index} navItem={item} />;
+          })}
         </menu>
       </div>
     </nav>
