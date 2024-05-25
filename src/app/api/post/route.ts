@@ -1,11 +1,10 @@
-import { NextRequest } from "next/server";
-
 /*
 
 
 
 */
 
-export async function POST(request: NextRequest) {
-  return Response.json("POST or  Lost ??", request);
+export async function POST(request: Request) {
+  const reqBody = request.body;
+  return Response.json("POST or  Lost ??");
 }
