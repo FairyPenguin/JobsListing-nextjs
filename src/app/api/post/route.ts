@@ -5,9 +5,9 @@
 */
 
 export async function POST(request: Request) {
-  const reqBody = request.json();
+  const res = await request.json();
 
-  //   return Response.json({ res: reqBody.incomingRequest });
+  return Response.json({ res });
 
-  return new Response(JSON.stringify(reqBody));
+  //   return new Response(JSON.stringify(reqBody));
 }
