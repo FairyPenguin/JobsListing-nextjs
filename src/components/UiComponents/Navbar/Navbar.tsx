@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 import LogoSvgIcon from "@/components/SvgIcons/LogoSvgIcon";
+import Link from "next/link";
 
 function Navbar() {
   return (
@@ -14,21 +15,21 @@ function Navbar() {
 
         <menu className={styles["nav__items__list"]}>
           <li>
-            <a href="/index" className={styles["item__link"]}>
+            <Link href="/" className={styles["item__link"]}>
               Home
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/jobs" className={styles["item__link"]}>
+            <Link href="/all-jobs" className={styles["item__link"]}>
               Jobs
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/add-job" className={styles["item__link"]}>
+            <Link href="/add-job" className={styles["item__link"]}>
               Add Job
-            </a>
+            </Link>
           </li>
         </menu>
       </div>

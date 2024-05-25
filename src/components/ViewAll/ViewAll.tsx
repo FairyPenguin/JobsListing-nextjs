@@ -1,5 +1,5 @@
 // ======/ Imports /======
-
+import Link from "next/link";
 // CSS-Module File Import
 import styles from "./ViewAll.module.css";
 
@@ -8,9 +8,9 @@ import styles from "./ViewAll.module.css";
 export default function ViewAll() {
   return (
     <section className={styles["jobs__viewall"]}>
-      <a href="/jobs" className={styles["jobs__viewall__link"]}>
+      <Link href="/all-jobs" className={styles["jobs__viewall__link"]}>
         View All Jobs
-      </a>
+      </Link>
     </section>
   );
 }
