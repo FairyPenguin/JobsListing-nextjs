@@ -10,6 +10,6 @@ export async function GET(
   _request: Request,
   { params }: { params: { id: string } }
 ) {
-  const id = params.id;
+  const id = parseInt(params.id);
   return Response.json(id);
 }
